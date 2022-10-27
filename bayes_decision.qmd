@@ -1,0 +1,27 @@
+---
+title: "Optimizing Risk Decisions with Imperfect Data"
+author: "Joel Anderson"
+format: docx
+editor: visual
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+---
+
+## Abstract
+
+In any integrity management program, there are always competing alternatives for any decision, such as to dig or not to dig an anomaly, replace or not replace. If perfect information were always available similar to a math problem where everything is given except the answer, risk engineers would be an unnecessary expense. Barring perfect information, the alternative option could be an exhaustive corpus of data with frequencies of every outcome and condition combination. However, in all but the most trivial cases, neither of these exist, and the engineer is dealt partial, imperfect information where the true state of nature is uncertain. To deal with this uncertainty in everyday life people develop heuristics, mental shortcuts that allow us to process this information with minimal effort and time. But when the probabilities are imprecise, the decisions based on these shortcuts can be fraught with biases and fallacies. However, all decisions carry some amount of risk which is dependent on the (uncertain) true state of nature, and the potential loss associated with each action.
+
+This paper will demonstrate an innovative application of decision theory that incorporates existing knowledge with observations to quantify the tradeoffs of competing alternatives in an integrity management program to arrive at a decision that minimizes the risk based on the state of knowledge at that given time.
+
+# Introduction
+
+Two people of equal ability can be shown the same data can come to different conclusions. Why is that? It is because people though they think of themselves as rational are really very irrational. It is important to realize that a decision with a bad outcome is not necessarily a bad decision and a decision with a favorable outcome is not necessarily a good decision. For example: If I take my paycheck and bet it on a single spin of the roulette wheel and win, it's a positive outcome but still a bad decision since the probability of losing is far greater than winning and the risk i.e. probability of loss x loss is large.
+
+Any decision involves the following things:
+
+-   The true but uncertain state of nature
+
+-   The potential loss (or gain) for each combination of selected state and outcome
+
+-   Some sort of observation with some level of uncertainty
+
+Laplace in his *Essai Philosophique sur les Probabilit´es* talked about an urn containing 1,000 balls which 1 is white and 999 are black. A person whom is known to be honest $\frac{9}{10}$ of the time draws a ball at random and declares it to be white. Without thinking, most people will say the probability of it being white is 0.9 but this is wrong. It is what is known as the base-rate fallacy it ignore the prior probability of it being white ($\frac{1}{1000}$ ). The total posterior probability of white is prior odds times the likelihood or $\frac{9}{10} x \frac{1}{1000} = \frac{9}{10,000}$
